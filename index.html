@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema Citas - Carlos Vieco Ortiz</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido al sistema de orientación psicológica<br>de la Institución Educativa Carlos Vieco Ortiz</h1>
+  </header>
+
+  <main>
+    <button id="showForm">Agendar mi cita</button>
+
+    <form id="citaForm" class="hidden">
+      <h2>Formulario de Cita Psicológica</h2>
+      <label>Nombre completo:
+        <input type="text" id="nombre" required />
+      </label>
+      <label>Correo electrónico:
+        <input type="email" id="correo" required />
+      </label>
+      <label>Fecha de la cita:
+        <input type="date" id="fecha" required />
+      </label>
+      <label>Hora:
+        <input type="time" id="hora" required />
+      </label>
+      <label>Motivo de la cita:
+        <textarea id="motivo" required></textarea>
+      </label>
+      <label>Psicóloga asignada:
+        <input type="text" value="Isabel Romero" disabled />
+      </label>
+      <button type="submit">Guardar cita</button>
+    </form>
+
+    <section id="historial">
+      <h2>Mis citas agendadas</h2>
+      <ul id="listaCitas"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Institución Educativa Carlos Vieco Ortiz</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
